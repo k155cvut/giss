@@ -1,0 +1,1260 @@
+
+<!doctype html>
+<html lang="cs" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../data/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Průvodce cvičeními - Geografické informační systémy (14GISS)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#giss_stručný_průvodce_semestrem_geografických_informačních_systémů_na_fd" class="md-skip">
+          Přeskočit obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Záhlaví">
+    <a href="../.." title="Geografické informační systémy (14GISS)" class="md-header__button md-logo" aria-label="Geografické informační systémy (14GISS)" data-md-component="logo">
+      
+  <img src="../../assets/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Geografické informační systémy (14GISS)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Průvodce cvičeními
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hledat" placeholder="Hledat" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhledávání">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistit" aria-label="Vyčistit" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializace vyhledávání
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Karty" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Charakteristika předmětu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Cvičení
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../data/" class="md-tabs__link">
+        
+  
+    
+  
+  Data
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigace" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Geografické informační systémy (14GISS)" class="md-nav__button md-logo" aria-label="Geografické informační systémy (14GISS)" data-md-component="logo">
+      
+  <img src="../../assets/favicon.svg" alt="logo">
+
+    </a>
+    Geografické informační systémy (14GISS)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charakteristika předmětu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Cvičení
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cvičení
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Průvodce cvičeními
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Průvodce cvičeními
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gis_a_souřadnicové_připojení_dat" class="md-nav__link">
+    <span class="md-ellipsis">
+      GIS a souřadnicové připojení dat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#základní_práce_s_daty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Základní práce s daty
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#výběr_prvků_dotazování_query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Výběr prvků (dotazování, query)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Výběr prvků (dotazování, query)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trvalé_uložení_query_nad_vrstvou_definition_query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trvalé uložení query nad vrstvou (Definition query)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prostorové_překryvné_funkce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prostorové (překryvné) funkce
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import_obecných_negisovských_dat_do_prostředí_gis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import obecných negisovských dat do prostředí GIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editace_geometrií_vektorových_dat_vektorizace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editace geometrií vektorových dat, vektorizace
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#práce_s_rastry_v_gis_georeferencování" class="md-nav__link">
+    <span class="md-ellipsis">
+      Práce s rastry v GIS, georeferencování
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prace-s-daty-webovych-mapovych-sluzeb-nebo-cloudu-arcgis-online" class="md-nav__link">
+    <span class="md-ellipsis">
+      Práce s daty webových mapových služeb nebo cloudu ArcGIS Online
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Práce s daty webových mapových služeb nebo cloudu ArcGIS Online">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arcgis_online" class="md-nav__link">
+    <span class="md-ellipsis">
+      ArcGIS Online
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbolika_dat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symbolika dat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Symbolika dat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symbolika_vektorů" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symbolika vektorů
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="giss_stručný_průvodce_semestrem_geografických_informačních_systémů_na_fd">14GISS – stručný průvodce semestrem geografických informačních systémů na FD</h1>
+<h2 id="data">Data</h2>
+<p>Webová složka s daty ArcČR a dalšími testovacími datovými sadami je <a href="https://vltava.fsv.cvut.cz/giss_data"><strong>k dispozici ke stažení</strong></a>. Složka obsahuje: </p>
+<ul>
+<li>data ArcČR ve verzi 3.3 (nepracujte s novější verzí 4.2, která je v mnohém ochuzená);<ul>
+<li><strong>ArcCR_v3.3.zip</strong></li>
+</ul>
+</li>
+<li>vektorová data ve složce Data_vektory:<ul>
+<li><strong>Obce_info.xls</strong> – informace o obcích, jejich názvech, vlajkách apod., data obsahují kód obce pro vazbu na ArcČR;</li>
+<li><strong>Pozarni_stanice.csv</strong> – vybrané požární stanice z OpenStreetMap;</li>
+<li><strong>Rychlost_radary.csv</strong> – vybrané rychlostní radary;</li>
+<li><strong>Vodojemy.xls</strong> – vybrané věžové vodojemy;</li>
+</ul>
+</li>
+<li>rastr digitálního modelu reliéfu<ul>
+<li><strong>Rastr_DMR.zip</strong> – tento jediný rastr je včetně georeferenční informace;</li>
+</ul>
+</li>
+<li>rastrová data ve složce Data_rastry:<ul>
+<li><strong>bonita_klimatu.png</strong> – klimatické bonitní regiony v Praze;</li>
+<li><strong>cesko800.gif</strong> – automapa ČR;</li>
+<li><strong>CO_Pnetluky</strong> – rastr tzv. císařského povinného otisku mapy stabilního katastru (první katastrální mapy z 40. let 19. stol.);</li>
+<li><strong>geoCR.png</strong> – geologická mapa ČR;</li>
+<li><strong>hluk.jpg</strong> – hluková mapa Prahy;</li>
+<li><strong>muller_prehled500</strong> – přehledová verze tzv. Müllerovy mapy Čech z 20. let 18. století;</li>
+<li><strong>SMO5_LITC75.jpg</strong> a <strong>SMO5_LITC75.jpg</strong> – tzv. Státní mapa – odvozená 1 : 5000, mapové listy v záp. části okresu Litoměřice;</li>
+<li><strong>Tur_mapa_25tis</strong> – výřez turistické mapy Geodézie On-Line v záp. části okresu Litoměřice.</li>
+</ul>
+</li>
+</ul>
+<h2 id="gis_a_souřadnicové_připojení_dat">GIS a souřadnicové připojení dat</h2>
+<p>V ArcGIS pro řešeno tzv. on-the-fly transformací (aplikace slícuje data v různých souř. systémech bez nutnosti interakce uživatelem).</p>
+<p><strong>Souřadnicové systémy (SRS) používané na našem území</strong></p>
+<table>
+<thead>
+<tr>
+<th>Souřadnicový systém</th>
+<th>Systém jednotek</th>
+<th>EPSG kód</th>
+<th>Hodnoty, okolo kterých se pohybují souřadnice na našem území</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S–JTSK</td>
+<td>metrický</td>
+<td>5514</td>
+<td>–750 000; –1 100 000</td>
+</tr>
+<tr>
+<td>UTM zóna 33N</td>
+<td>metrický</td>
+<td>32633</td>
+<td>500 000; 5 500 000</td>
+</tr>
+<tr>
+<td>Web Mercator (Google Mercator)</td>
+<td>metrický</td>
+<td>3857</td>
+<td>1 600 000; 6 400 000</td>
+</tr>
+<tr>
+<td>WGS-84</td>
+<td>stupňový</td>
+<td>4326</td>
+<td>14,5°; 50,0°</td>
+</tr>
+</tbody>
+</table>
+<p>SRS je možné nastavit ve vlastnostech mapy (<em>Properties &gt; Reference system</em>), lze zadat číslo EPSG kódu a příslušný SRS se doplní. SRS jednotlivých vrstev je jejich vlastností (u Shapefile je evidován v souboru PRJ) a lze jej změnit (přetransformovat třídu prvků do jiného SRS) pomocí funkce <em>Project</em>. Nemá-li třída prvků definován SRS, ArcGIS ji sice dovede zobrazit (v aktuálně nastaveném SRS mapy bez ohledu na správnost), ale nedokáže transformovat do jiných SRS. Nastavit chybějící informaci o SRS třídě prvků lze funkcí <em>Define projection</em>.</p>
+<p>Měření délek, ploch apod. je vhodné provádět v systému S–JTSK nebo UTM, jelikož nejsou rozměry zatíženy zkreslením. Více se o souřadnicových systémech a jejich definice v různých formátech je možné najít na webu <a href="https://www.spatialreference.org">spatialreference.org</a>.</p>
+<h2 id="základní_práce_s_daty">Základní práce s daty</h2>
+<p>Data v GIS jsou převážně <strong>vektorová</strong> a <strong>rastrová</strong>.</p>
+<p><strong>Vektory</strong> lze prakticky neomezeně přiblížit, mohou nést atributové informace, jsou vhodné pro jevy diskrétně rozložené v prostoru (bodové objekty, liniové objekty, areálové objekty). Jednotlivé informace jsou sdruženy do <strong>tříd prvků</strong> bodového, liniového nebo polygonového charakteru. Vektory nesou polohovou (geometrickou) a věcnou (atributovou) informaci. Třídy prvků mohou představovat samostatné datové struktury na disku (formát Shapefile) nebo existovat jako vrstvy v databázích (geodatabáze GDB, MDB, Mobile Geodatabase, souborové databáze SQLite, dBase aj. či \"robustní\" databázové stroje typu Oracle, MS SQL Server apod.). Souborová geodatabáze GDB je vždy součástí složky projektu založeného v ArcGISu a představuje výchozí umístění, kam aplikace ukládá nově vypočtené třídy prvků, vrstvy mezivýpočtů apod.</p>
+<p><strong>Rastry</strong> představují matici prostorově umístěných obrazových bodů (pixelů) nesoucích obrazovou nebo atributovou informaci (obrazová data, ortofota, skeny map atd. × rastry výškové, šedotónové, nákladové aj.). Mohou existovat samostatně na disku (klasické formáty TIFF, JPEG, PNG apod.) nebo být součástí databází.</p>
+<p>Data lze do projektu přidávat přes volbu <em>Map &gt; Add Data</em>, přetáhnout je z panelu katalogu anebo přímo z jakéhokoli okna správce souborů. Pozor, při přidávání formátu Shapefile, který sestává ze 4–7 souborů, je třeba přetáhnout soubor SHP. Data se vykreslují v pořadí daném pořadím v tabulce obsahu (TOC) vlevo. Vrstvy výše překryjí vrstvy níže, s pořadím je možné interaktivně hýbat, vrstvy je možné přejmenovat (nepřejmenuje samotnou třídu prvků v databázi nebo na disku, pouze její jméno uvnitř mapového projektu). Mapový projekt představuje strukturu, kde v jedné složce na disku je soubor APRX se samotným projektem (neobsahuje data, ale jen referencuje třídy prvků nebo rastry, ale ukládá do sebe nastavení symboliky dat apod.), výchozí geodatabáze GDB, výchozí toolbox ATBX, zálohy a prostorové indexy. Případně jsou zde soubory s uloženými připojeními na externí datová umístění (AGS soubory).</p>
+<p>Nové třídy prvků je možné vytvářet v okně katalogu (v k. m. geodatabáze volbou <em>New &gt; Feature Class</em>), kdy se spustí krátký průvodce nastavením geometrického typu nové třídy prvků, jejich atributů, nastavení SRS apod.</p>
+<p>Je možné zobrazit atributovou tabulku (v kontextovém menu třídy prvků <em>Attribute table</em>), která obsahuje informace o všech prvcích dané třídy prvků, tedy hodnoty atributů (atributových polí, sloupců atp.). Geometrie prvků je vždy v atributu <em>Shape</em>. Atributovou informaci je možné editovat (přímo v AT, s výjimkou geometrického atributu <em>Shape</em> a tzv. primárního klíče – zpravidla <em>OBJECTID</em>, který ArcGIS používá pro řazení a identifikaci dat), atributy je možné pomocí <em>Add Field</em> přidávat, přesouvat pořadí, mazat. Je možné mazat také jednotlivé prvky. Atributy mají datové typy podobně jako třeba buňky v MS Excel (Long – celé číslo, Float/Double – reálná čísla, Text, Datum, Raster apod.). Je-li hodnota atributu prázdná, ArcGIS vypisuje hodnotu <em><code>&lt;Null&gt;</code></em>. Je-li aktuálně vybrána funkce <em>Explore</em> (záložka <em>Map</em>), Lze se dotazovat na atributovou informaci konkrétního prvku pomocí kliknutí. Atributy daného objektu se objeví ve formě tzv. pop-upu (vyskakovacího okna).</p>
+<p>Pomocí funkce <em>Select</em> je možné provést (interaktivní) <strong>výběr</strong> klikáním na dané prvky v mapovém okně (s Shift přidáváme k výběru, s Ctrl ubíráme z výběru). Obdobně je možné vybírat prvky pomocí označování záhlaví řádků v AT (Shift vybírá navazující rozsah, Ctrl jednotlivé prvky/řádky –podobně jako při práci v oknech Windows).</p>
+<p>Data nebo jejich část (výběr) je možné exportovat do nové vrstvy (v k. m. vrstvy <em>Data &gt; Export features</em> a vybrat si umístnění do geodatabáze (GDB) nebo do složky na disku (výsledkem bude formát Shapefile).</p>
+<p>Nebude-li řečeno jinak, budeme pracovat s daty sady ArcČR 500 (vektorová data republiky v měřítku zhruba 1 : 500 tis., poskytovaná firmou ArcData zdarma), případně s daty sady Data200 (vytvářené Zeměměřickým úřadem a poskytované také zdarma). Je vhodné se se strukturou ArcČR seznámit (PDF soubor uvnitř ZIP archívu). Jedná se o dvě geodatabáze (Admin_Cleneni.GDB s daty územních jednotek a ArcCR_33.GDB s daty topografických objektů, jako jsou silnice, vodní toky, lesy apod.). Součástí dodaných dat je také rastr digitálního modelu reliéfu.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dojde-li k zavření základních panelů (Catalog, Table of contents), lze je znovu vyvolat pomocí volby <em>View &gt; Reset panes for Mapping</em></p>
+</div>
+<h2 id="výběr_prvků_dotazování_query">Výběr prvků (dotazování, query)</h2>
+<p>Výběry je možné provádět také na základě splnění nějaké vlastnosti atributové (<strong>atributový dotaz / Select by attributes</strong>) nebo polohové (<strong>prostorové dotazy / Select by location</strong>). Jedná se o velmi časté úkony při práci v GIS, které jsou mnohdy součástí složitějších workflow.</p>
+<p>Takto vybrané prvky se označí (vyberou) stejným způsobem jako při interaktivním výběru myší nebo označením prvků v AT. <strong>Je-li v třídě prvků proveden výběr, všechny gisovské nástroje pracují vždy s prvky zahrnutými do výběru a zbytek třídy prvků je opomenut.</strong> Výběr lze zrušit kliknutím na <em>Clear</em>. Implicitně jsou vybrané prvky podbarveny azurově, lze změnit v nastavení programu (<em>Options,</em> sekce <em>Selection</em>). </p>
+<div class="admonition tip">
+<p class="admonition-title">V nastavení programu, v sekci <em>General &gt; Project recovery</em> lze nastavit interval ukládání pracovní verze pro případ pádu programu (nejméně lze 1 minuta)<br /><br /> V menu <em>General &gt; Application theme</em> lze také vybrat tmavou verzi prostředí (vhodné pro delší práci, šetří oči; mapové okno však vždy zůstane s pozadím bílým).</p>
+</div>
+<p><strong>Atributový dotaz</strong> spočívá ve splnění podmínky kladené na hodnoty atributů či jejich existenci. Používá se jazyk SQL nebo syntaxe pomocí předdefinovaných klauzulí, z nichž je možné většinu běžných dotazů poskládat. Z jazyka SQL se vyplňuje jen část, která navazuje na klauzuli <strong><code>SELECT \* FROM &lt;název_tabulky&gt; WHERE ...</code></strong></p>
+<table>
+<thead>
+<tr>
+<th>Situace</th>
+<th>Příklad SQL syntaxe v hypotetických datech <br /> <span style="font-weight: normal;">(přesné znění závisí na názvech a hodnotách atributů)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vybrat všechny rybníky z vrstvy vodních nádrží.</td>
+<td><strong><code>TYP = "rybnik"</code></strong></td>
+</tr>
+<tr>
+<td>Vybrat všechny letiště, které mají jméno</td>
+<td><strong><code>NAME IS NOT NULL</code></strong></td>
+</tr>
+<tr>
+<td>Všechny silnice delší než 5 km</td>
+<td><strong><code>SHAPE_Length &gt; 5000</code></strong></td>
+</tr>
+<tr>
+<td>Všechny obce s názvem na <em>Ba–</em></td>
+<td><strong><code>NAZ_OBCE LIKE "Ba%"</code></strong></td>
+</tr>
+<tr>
+<td>Všechny vodní plochy s šestipísmenným názvem končícím <em>–e</em></td>
+<td><strong><code>NAZEV LIKE "_____e"</code></strong></td>
+</tr>
+<tr>
+<td>Silnice II. třídy kratší než 2 km</td>
+<td><strong><code>TRIDA = "II. třída" AND SHAPE_Length &lt; 2000</code></strong></td>
+</tr>
+<tr>
+<td>Vodní toky kategorie III a níž</td>
+<td><strong><code>KATEGORIE IN (1,2,3)</code></strong></td>
+</tr>
+<tr>
+<td>Všechny moravské kraje (4 nejvýchodnější)</td>
+<td><strong><code>NAZ_KRAJ IN ("Moravskoslezský","Zlínský","Olomoucký","Jihomoravský")</code></strong></td>
+</tr>
+<tr>
+<td>Úplně všechny prvky třídy prvků</td>
+<td><strong><code>OBJECTID &gt;= 0</code></strong> nebo <strong><code>OBJECTID IS NOT NULL</code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Pomocí AND a OR je možné vytvářet kombinované dotazy pomocí logického součtu AND (splněno oboje) anebo rozdílu OR (splněno jedno nebo druhé).</p>
+<p><strong>Prostorový dotaz</strong> spočívá v aplikaci geograficky dané podmínky na vstupní data. Podmínka vždy vyjadřuje prostorový vztah dvou vrstev:</p>
+<table>
+<thead>
+<tr>
+<th>Prostorový vztah</th>
+<th>Název v ArcGIS</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Průnik</td>
+<td>Intersect</td>
+<td>vrstvy sdílejí nějaké společné body nebo část geometrie, alespoň 1 bod</td>
+</tr>
+<tr>
+<td>Do vzdálenosti</td>
+<td>Within a distance</td>
+<td>vrstvy mají společný nenulový průnik s určitou vzdálenostní tolerancí</td>
+</tr>
+<tr>
+<td>Obsahuje</td>
+<td>Contains</td>
+<td>vrstva v sobě obsahuje jinou (např. polygon zahrnuje body, linie) anebo její část</td>
+</tr>
+<tr>
+<td>Je obsaženo</td>
+<td>Within</td>
+<td>vrstva nebo její část tvoří podmnožinu jiné (bod, linie uvnitř polygonu, bod na linii apod.)</td>
+</tr>
+<tr>
+<td>Obsahuje kompletně</td>
+<td>Completely contains</td>
+<td>vrstva v sobě zcela obsahuje jinou (např. polygon zahrnuje body, linie)</td>
+</tr>
+<tr>
+<td>Je kompletně obsaženo</td>
+<td>Completely within</td>
+<td>vrstva nebo tvoří podmnožinu jiné (bod, celá linie uvnitř polygonu, bod na linii apod.)</td>
+</tr>
+<tr>
+<td>Dotyk linií</td>
+<td>Boundary touches</td>
+<td>vrstva se dotýká hranice jiné vrstvy (bod na polygonu, linie kříží/dotýká se hranice polygonu apod.)</td>
+</tr>
+<tr>
+<td>Sdílení segmentu</td>
+<td>Share a segment with</td>
+<td>vrstvy spolu sdílejí alespoň jeden celý segment linie (nestačí jeden bod)</td>
+</tr>
+<tr>
+<td>Těžiště leží</td>
+<td>Have their center in</td>
+<td>těžiště (centroid) vrstvy leží uvnitř jiné</td>
+</tr>
+</tbody>
+</table>
+<p>Tyto prostorové vztahy lze vyšetřovat přímo (přesně) anebo se vzdálenostní tolerancí (situace typu <em>najít všechny body do vzdálenosti 5 km od jiného prvku</em>; v ArcGIS <em>Search distance</em>).</p>
+<p>Tyto dotazy nikdy nemění geometrie vstupních vrstev, pouze provádějí výběr. Změnu geometrických vlastností vrstev na základě polohových vztahů umožňují až <strong>prostorové funkce</strong>.</p>
+<h4 id="trvalé_uložení_query_nad_vrstvou_definition_query">Trvalé uložení query nad vrstvou (<em>Definition query</em>)</h4>
+<p>Nad vrstvou je možné nastavit jakýsi trvale volaný filtr/dotaz, který lze nastavit v k. m. vrstvy pod sekcí <em>Definition query</em>. Zde je možné vložit úplně stejným způsobem jako u atributového dotazu klauzuli nebo SQL dotaz, který se po uložení trvale aplikuje a datová vrstva se poté chová, jako by data nesplňující nadefinovanou podmínku vůbec neobsahovala. Definition query lze kdykoli vypnout dočasně (odškrtnutím příslušného řádku) nebo trvale. Je možné nadefinovat si více těchto Definition query a dle potřeby mezi nimi přepínat.</p>
+<h2 id="prostorové_překryvné_funkce">Prostorové (překryvné) funkce</h2>
+<p>Umožňují měnit polohové vlastnosti tříd prvků na základě polohové interakce s jinými třídami. V zásadě se jedná o aplikaci základních topologických operací:</p>
+<table>
+<thead>
+<tr>
+<th>Prostorový vztah</th>
+<th>Název prostorové funkce <br />v ArcGIS</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Průnik</td>
+<td><strong><em>Intersect</em></strong></td>
+<td>matematický průnik dvou vrstev (výsledkem bod, linie, plocha nebo prázdná třída prvků)</td>
+</tr>
+<tr>
+<td>Sjednocení</td>
+<td><strong><em>Union</em></strong></td>
+<td>sjednocení všech vstupujících vrstev, zachovají se atributy všech sloučených dílů</td>
+</tr>
+<tr>
+<td>Doplněk</td>
+<td><strong><em>Symmetrical difference</em></strong></td>
+<td>jde o topologický doplněk k první vrstvě</td>
+</tr>
+<tr>
+<td>Odmazání</td>
+<td><strong><em>Erase</em></strong></td>
+<td>z vrstvy odstraní tu část, která tvoří s cílovou vrstvou průnik, atributy vstupní vrstvy se zachovávají</td>
+</tr>
+<tr>
+<td>Ořez</td>
+<td><strong><em>Clip</em></strong></td>
+<td>z původní vrstvy zachová jen tu část, která s cílovou vrstvou tvoří průnik</td>
+</tr>
+<tr>
+<td>Sloučení</td>
+<td><strong><em>Merge</em></strong></td>
+<td>sloučí vstupující vrstvy do jedné souhrnné geometrie bez zachování původních hranic a atributů</td>
+</tr>
+<tr>
+<td>Obalová zóna</td>
+<td><strong><em>Buffer</em></strong></td>
+<td>spočte vrstvu, přestavující plochu maximální vzdálenosti od dané vrstvy</td>
+</tr>
+</tbody>
+</table>
+<p>Poněkud stranou stojí dvojice funkcí <em>Dissolve</em> a <em>Multipart to singlepart</em>, které se váží s prostorovou souvislostí prvků.</p>
+<p><strong>Všechny prostorové funkce a všechny dále probírané analytické funkce GIS umožňují měnit geometrie tříd prvků a jejich atributy. Panel s výběrem funkcí lze vyvolat pomocí <em>Analysis &gt; Tools</em>.</strong></p>
+<p><strong><em>Dissolve</em></strong> umožňuje proředění vrstvy na základě shody tematického atributu. Tedy lze např. na základě shodného atributu příslušnosti ke kraji proředit vrstvu okresů a převést ji (sloučením) na kraje. Lze k výsledným prvkům přiřadit statistické sumární informace – sekce <em>Statistic fields</em>. Zde je možnost nechat si k nově sloučeným prvkům spočítat charakteristiky dle následující tabulky:</p>
+<table>
+<thead>
+<tr>
+<th>Charakteristika v ArcGIS</th>
+<th>Význam</th>
+<th>Charakteristika v ArcGIS</th>
+<th>Význam</th>
+<th>Charakteristika v ArcGIS</th>
+<th>Význam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Count</td>
+<td>Počet prvků</td>
+<td>Standard deviation</td>
+<td>Směrodatná odchylka z hodnot</td>
+<td>First</td>
+<td>Hodnota prvního prvku</td>
+</tr>
+<tr>
+<td>Mean</td>
+<td>Průměr hodnot</td>
+<td>Range</td>
+<td>Rozsah hodnot (max – min)</td>
+<td>Last</td>
+<td>Hodnota posledního prvku</td>
+</tr>
+<tr>
+<td>Sum</td>
+<td>Součet hodnot</td>
+<td>Median</td>
+<td>Medián hodnot</td>
+<td>Unique</td>
+<td>Počet unikátních hodnot mezi prvky</td>
+</tr>
+<tr>
+<td>Minimum</td>
+<td>Minimální hodnota</td>
+<td>Variance</td>
+<td>Rozptyl hodnot</td>
+<td>Concatenate</td>
+<td>Jednotlivé hodnoty oddělené oddělovačem</td>
+</tr>
+<tr>
+<td>Maximum</td>
+<td>Maximální hodnota</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">ostatní atributy, nenastavené v rámci <em>Statistic fields</em>, se do výsledné vrstvy nepřenesou</p>
+</div>
+<p>Naproti tomu <strong><em>Multipart to singlepart</em></strong> umožňuje rozdělit geometrie objektů na jednotlivé původně prostorově nesouvislé díly a odstranit tak z dat takové prvky, které sestávají z více vzájemně nespojitých částí (<em>parts</em>). Příkladem může být vrstva obcí, kdy některé obce mají exklávy (geometricky nespojité části), které součástí obce jsou, ale netvoří s vlastním hlavním správním územím obce jeden prostorový celek.</p>
+<h2 id="import_obecných_negisovských_dat_do_prostředí_gis">Import obecných negisovských dat do prostředí GIS</h2>
+<p>Existují tři varianty neprostorových datových sad, které je možné převést na prostorová (gisovská) data. Mimoto existuje velké množství datových sad, které převést na prostorová data nelze, protože se jedná o datové sady zcela bez jakékoli geometrické informace.</p>
+<p>Obecně se může jednat o textové soubory (TXT, CSV aj.), jednoduché tabulky (XLS, DBF aj.) i další formáty, strojově zpracovatelné.</p>
+<p><strong>I Data mají souřadnice nikoli přímo součástí geometrického určení, nýbrž uložené v atributech</strong></p>
+<p>Nejjednodušší případ, který lze převést snadno na gisovskou vrstvu, obsahuje souřadnice někde mezi atributy. Vždy je dobré podívat se na data a pokud není znám SRS, pokusit se ho odhadnout ze souřadnic.</p>
+<p>Příklad CSV souboru v systému WGS-84 (SRS je patrný z rozměru souřadnic, zřejmě se jedná o stupně zem. šířky a délky):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ID, Lat, Lon, Category, Name
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>21, 50.22516, 15.58113, 2,
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>22, 50.29161, 15.51305, 3, obelisk
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>23, 50.22913, 14.99161, 3, pomník
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>28, 50.00546, 15.05396, 1, sv. Václav
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>31, 50.38337, 15.11831, 2,
+</code></pre></div>
+<p>Taková data lze naimportovat pomocí funkce <em>Display XY Data</em> v k. m. třídy prvků. Je třeba provázat atributy dat s geometrickými souřadnicemi (osa X napravo, tedy např. <em>Lon, Longitude, X, E</em> apod.) a osa Y nahoru, tedy např. <em>Lat, Latitude, Y, N</em> apod.). Výsledná třída prvků se již chová jako jakákoli jiná prostorová data v ArcGIS. Data jednoduchých tabulek jako jsou excelovské soubory se v ArcGIS tváří jako samostatná tabulka pro každý list.</p>
+<div class="admonition warning">
+<p class="admonition-title">pro import listů MS Excel je třeba mít nainstalované ODBC databázové rozhraní (je standardně součástí MS Office)</p>
+</div>
+<p><strong>II Data neobsahují souřadnice, ale jiné prostorově odvoditelné informace (např. adresy)</strong></p>
+<p>Taková data je možné geolokalizovat (i hromadně) za pomoci lokalizační služby (mnohdy placené, ale existuje i zdarma využitelná <a href="https://ags.cuzk.cz/arcgis/rest/services/RUIAN/Vyhledavaci_sluzba_nad_daty_RUIAN/MapServer/exts/GeocodeSOE">geolokalizační služba postavená nad daty registru RÚIAN</a>). Spouští se funkcí <em>Geocode table</em> v k. m. třídy prvků, pomocí průvodce je možné provést geolokalizování na základě adres uložených v jednom nebo více atributových polích dat.</p>
+<p>Výsledek geolokalizování je silně závislý na kvalitě dat (adres) a na úplnosti a přesnosti geolokalizační databáze. Je běžné, že se podaří lokalizovat i méně než 90 % vstupních dat, zbytek je třeba upravit nebo provést geolokalizaci ručně.</p>
+<p><strong>III Data neobsahují souřadnice ani adresy, ale obsahují jednoznačné identifikátory provázatelné s prostorovými daty</strong></p>
+<p>Zde jde o propojení negeometrické (neprostorové) tabulky s gisovskými daty na základě shody jednoho z atributů. Velice často se v tomto ohledu používají identifikátory administrativních jednotek (kódy obcí, kódy k. ú.), v případě jednoznačnosti názvů (např. u okresů, ORP aj.) lze použít jako vazebný atribut přímo název.</p>
+<p>Prakticky se používá vazba pomocí <em>Join</em> (v k. m. cílové (prostorové) vrstvy <em>Joins and relates &gt; Add join</em>), kde je třeba nastavit:</p>
+<ol>
+<li>cílovou třídu prvků;</li>
+<li>název atributu v cílové vrstvě;</li>
+<li>připojovaná data;</li>
+<li>název vazebného atributu v připojovaných datech.</li>
+</ol>
+<p>Pomocí <em>Validate join</em> je možné zobrazit informace o úspěšnosti propojení dat.</p>
+<p>Po propojení se příslušné nové atributové sloupce připojí k třídě prvků a lze s nimi pracovat poobně jako se všemi ostatními atributy (dotazování apod.), jen je není možné editovat. Jedná se vlastně o jakousi referenci na další datový soubor.</p>
+<h2 id="editace_geometrií_vektorových_dat_vektorizace">Editace geometrií vektorových dat, vektorizace</h2>
+<p>Pomocí funkcí panelu <em>Edit</em> lze editovat data geometricky. Při zapnutém panelu <em>Attributes</em> je možné zároveň měnit geometrie prvků i editovat jejich atributy.</p>
+<p>Záložka <em>Edit</em> umožňuje pomocí tlačítek <em>Create</em> nebo <em>Modify</em> vybrat typ operace s daty. V případě vytváření nových dat se otevře panel s editačními šablonami, který umožňuje vybrat, do které vrstvy / třídy prvků budou nově vytvářené geometrie zapisovány.</p>
+<p>Hlavní nástroje jsou soustředěny v sekci <em>Tools</em> a zahrnují nástroje pro přesun prvků (<em>Move</em>), sloučení několika prvků dohromady (<em>Merge</em>) nebo jejich rozdělení (<em>Split</em>), změnu geometrického průběhu linie nebo polygonu (<em>Reshape</em>) či editaci jednotlivých lomových bodů (<em>Edit vertices</em>). Sada obsahuje množství dalších nástrojů pro speciální editační operace. Při editaci linie nebo polygonu je možné využít fuknci <em>Trace</em> (na malém editačním panelu, který se otevírá ve spodní části okna), která slouží k převzetí části geometrie již existující vrstvy (vhodné pro zachování topologické čistoty dat).</p>
+<p>Právě editovaná vrstva je ve stavu tzv. sketch – návrhu, kdy je pomocí F2 třeba uložit výslednou geometrii a ukončit editaci příslušného prvku. Celou editovanou třídu prvků je třeba uložit tlačítkem <em>Save</em>, do doby uložení nejsou editace propsány do datové sady a jedná se o jakýsi mezistav. Program v případě aplikace analytických funkcí na editovanou vrstvu upozorňuje pomocí výstrahy <em>Pending edits</em>, že na vrstvě jsou prozatím neuložené editace.</p>
+<p>Editovat popsaným způsobem nelze rastry nebo data připojená přes Join.</p>
+<h2 id="práce_s_rastry_v_gis_georeferencování">Práce s rastry v GIS, georeferencování</h2>
+<p>Rastry jsou v GIS chápány jako datová struktura formy matice, ukládající data do jednotlivých jejích pozic (pixelů). Může se jednat o klasická obrazová data (ortofoto, družicové snímky, mapy, skeny, obrázky), které představují klasické rastrové soubory s R, G, B barevnými kanály. Případně se může jednat o jednokanálová (šedotónová, černobílá) data. Velice často také rastry nesou obecnou, neobrazovou informaci – používají se k ukládání informací o jevech, jež se spojitě mění v prostoru (teplota, nadm. výška, obecně jakákoli kvantitativní nebo kvalitativní informace).</p>
+<p>Aby bylo možné s rastrovými daty v GIS pracovat, je třeba je tzv. <strong>georeferencovat</strong> (geolokalizovat, geokódovat, angl. <em>georeference</em>, <em>adjust</em>, <em>geolocalise</em>). Tento proces zahrnuje uložení informace o poloze rastru v prostoru (rovině souř. referenčního systému). To bývá realizováno pomocí souřadnic levého horního rohu (<em>X<sub>T</sub></em>, <em>Y<sub>T</sub></em>), rozměru pixelu ve směru vodorovné a svislé hrany rastru (<em>m<sub>x</sub></em>, <em>m<sub>y</sub></em>) a stočení těchto hran vůči osám <em>x</em>, <em>y</em> souřadnicového systému (<em>ω<sub>x</sub></em>, <em>ω<sub>y</sub></em>). Tyto informace jsou pak v pořadí <em>m<sub>x</sub></em>, <em>ω<sub>x</sub></em>, <em>ω<sub>y</sub></em>, <em>m<sub>y</sub>, X<sub>T</sub>, Y<sub>T</sub></em> uloženy v souboru, tzv. <strong>world-file</strong>, nesoucím stejný název jako rastr a příponou poskládanou z prvního a posledního písmena přípony formátu rastru, doplněné uprostřed o W, tedy např. TFW pro formát TIFF, JGW pro JPEG apod.</p>
+<p>Příklad world-file souboru pro data v systému S–JTSK:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>250.00011407
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>-0.003468205327
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>-0.01468499854
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>-250.00025209
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>-822765.7312
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>-1034984.0508
+</code></pre></div>
+Je z něj např. patrné, že rastr byl zřejmě vyexportován v nějakém software v systému JTSK s rozlišením 250 m na pixel (1. a 4. řádek nesou hodnotu přibližně 250 m a 2. a 3. řádek s rotacemi jsou přibližně nulové); že jde o JTSK lze poznat ze souřadnicového posunu v 5. a 6. řádku.</p>
+<p>Takto souřadnicově umístěný rastr se po načtení do GIS zobrazí na patřičném místě (provede se matematická transformace v rovině na základě daných parametrů). Není-li georeferenční informace k dispozici, je možné georeferencovat rastr vůči známým bodům (jiné mapě) pomocí volby <em>Imagery &gt; Georeference</em>. Zde se pro rastr, který je aktuálně vybrán v tabulce obsahu, objeví panel <em>Georeferencing</em> s funkcemi pro souřadnicové umístění rastrů.</p>
+<p>Postup georeferencování je následující:</p>
+<ul>
+<li>je třeba mít k dispozici podkladovou mapu nebo data, vůči kterým je možné kresbu rastru umístit;</li>
+<li>ideální pro zdárné georeferencování je pracovat v SRS, ve kterém byl rastr vytvořen/exportován;</li>
+<li>pomocí volby <em>Fit to display</em> je možné rastr dočasně umístit do aktuálního prostoru mapového okna (je vhodné umístit mapové okno přibližně do prostoru, kde má být rastr souřadnicově umístěn) – jinak je levý horní roh rastru v bodě o souřadnicích 0, 0;</li>
+<li>pomocí volby <em>Raster Layer &gt; Transparency</em> je možné rastr zprůhlednit vůči \"pozadí\" a lépe se orientovat v obou datech;</li>
+<li>přidáváním identických bodů (IB) volbou <em>Add control points</em> se ukládají body o dvojích známých souřadnicích (napřed kliknout v rastru, poté na odpovídající místo v reálném SRS), na základě kterých je později možné rastr transformovat;</li>
+<li>rastr se automaticky on-the-fly transformuje (překresluje) podle aktuálně vložených bodů;</li>
+<li>pomocí <em>Save</em> se georeferencování uloží do world-file a rastr zůstane v poslední poloze již trvale.</li>
+</ul>
+<p>Různé matematické transformace v rovině využívají různý počet IB pro svůj výpočet. V případě, že je k dispozici více IB než je nutný počet, dojde k tzv. vyrovnání a ArcGIS nabídne v tabulce <em>Control point table</em> zbytkové střední chyby (<em>residuals</em>), jejichž hodnota zhruba odpovídá přesnosti georeferencování. Jde však pouze o statistický odhad, který může (ale v některých případech nemusí) ukazovat na přesnost celého vyrovnání. Lze takto např. odhalit hrubé chyby s výrazně větší hodnotou reziduí, které ukazují na chybné umístění bodu na rastru, resp. skutečném SRS. Při vložení přesně nutného počtu IB prochází rastr všemi body <strong>přesně</strong> (rezidua se vynulují), což lze využít např. při transformaci projektivně na 4 rohy mapového kladu.</p>
+<table>
+<thead>
+<tr>
+<th>Metoda</th>
+<th>Možnosti</th>
+<th>Počet nutných IB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shodnostní</td>
+<td>pouze posunutí v prostoru</td>
+<td>1</td>
+</tr>
+<tr>
+<td>podobnostní</td>
+<td>posunutí, rotace a změna celkového měřítka</td>
+<td>2</td>
+</tr>
+<tr>
+<td>afinní</td>
+<td>posun, rotace, odlišná změna měřítka ve směru souř. os (deformace úhlu mezi souřadnicovými osami)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>projektivní / kolineární</td>
+<td>pravoúhelník transformuje na obecný čtyřúhelník, zachovává tzv. dvojpoměr bodů</td>
+<td>4</td>
+</tr>
+<tr>
+<td>polynomická II. stupně</td>
+<td>úsečku transformuje na oblouk paraboly II. stupně</td>
+<td>6</td>
+</tr>
+<tr>
+<td>polynomická III. stupně</td>
+<td>úsečku transformuje na oblouk kubické paraboly</td>
+<td>10</td>
+</tr>
+<tr>
+<td>spline / TPS</td>
+<td>na fyz. principu deformace nekonečně tenkého plátu</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Tabulka transformačních metod v rovině</em></strong></p>
+<h2 id="prace-s-daty-webovych-mapovych-sluzeb-nebo-cloudu-arcgis-online">Práce s daty webových mapových služeb nebo cloudu ArcGIS Online</h2>
+<p>Při řešení úloh v GIS se velice často využívají data, která jsou distribuovaná, tj. neuložená lokálně na pracovní stanici, ale někde na webovém serveru nebo v databázích. Tato data se obecně připojují pomocí volby <em>Insert &gt; Connections &gt; Server</em>, kde se vybere odpovídající typ dat, případně <em>Insert &gt; Connections &gt; Database</em> v případě databáze přístupné skrze web.</p>
+<p>Rastrové mapové služby přenášejí pouze "náhledy" na data, tedy obrázky, jež nelze editovat. Lze se u nich dotazovat na atributovou informaci pomocí kliknutí funkcí <em>Explore</em>. Mezi takové patří webové služby standardu WMS, WMTS, ArcGIS Server Tile Service, ArcGIS Server Image Service. Vektorové mapové služby přenášejí kompletní data, použitelná k dalším analýzám (standard WFS, ArcGIS Server Feature Service). Je třeba znát URL adresu služby (tzv. přístupový bod, např. <a href="https://geoportal.gov.cz/arcgis/services/CENIA/cenia_copernicus_land/MapServer/WmsServer?">https://geoportal.gov.cz/arcgis/services/CENIA/cenia_copernicus_land/MapServer/WmsServer?</a>). Tyto služby standardů WMS, WMTS a WFS nelze procházet skrze žádné webové rozhraní, je třeba GIS nástroj nebo prohlížečka WMS služeb pro práci s daty takto distribuovanými.</p>
+<p>Mapové služby standardu ArcGIS Server lze procházet skrze webové rozhraní REST, např. <a href="https://ags.cuzk.cz/arcgis/rest/">https://ags.cuzk.cz/arcgis/rest/</a>, kde jsou vidět jednotlivé složky s mapovými službami a jejich podvrstvami, které je možné si v případě potřeby zobrazit v mapové prohlížečce nebo pomocí URL adresy připojit do GIS softwaru (<em>Insert &gt; Connections &gt; New ArcGIS Server</em>, který se pak objeví v panelu katalogu jako nová položka v sekci <em>Servers</em>). Odtud je pak možné přidávat jednotlivé vrstvy/služby do projektu, příp. je tam vložit přímou URL adresou přes <em>Add Data &gt; Add data from path</em>.</p>
+<h4 id="arcgis_online">ArcGIS Online</h4>
+<p>Z důvodu lepší interoperability a sdílení dat vznikají v posledních deseti letech cloudové služby, jejichž součástí bývá mapový server, úložiště dat, možnost provádění prostorových operací skrze web a někdy i API rozhraní pro tvorbu vlastních aplikací. Jedním z nejpoužívanějších je cloud <a href="https://www.arcgis.com">ArcGIS Online</a>, kam je možné publikovat data z desktopové aplikace ArcGIS Pro a zpětně je v této aplikaci používat.</p>
+<p>Součástí webového rozhraní je po přihlášení mapová prohlížečka (záložka <em>Map</em> nahoře v liště), pomocí které je možné nahlížet data a vytvářet z nich mapové kompozice (<em>WebMap</em>). V záložce <em>Contents</em> je možné procházet svůj vlastní obsah na cloudu (podobně jako na OneDrive, Google Drive apod.). Obsah je možné do ArcGIS Online publikovat z ArcGIS Pro (v k. m. kterékoli vrstvy v tabulce obsahu je položka <em>Sharing &gt; Share as web layer</em>, případně nahoře v záložce <em>Share &gt; Web layer</em> je možné vypublikovat všechny vrstvy aktuálně otevené v projektu (pozor, i vypnuté / odškrtnuté ze zobrazení). Publikovat lze vrstvy jako vektorové (Feature layer) nebo rastrové (Tile layer). Publikovaná data odečítají tzv. kredity za spotřebování datového úložiště (zhruba 1 kr. / 100 MB / den).</p>
+<p>Pro používání vrstev na ArcGIS Online v prostředí ArcGIS Pro je možné je standardně pomocí <em>Add Data</em> přidat do mapového projektu. Pouze se v dialogu otevření dat volí vlevo v sekci <em>Portal</em> buď <em>My Content</em> (hledání ve vlastních datových sadách) anebo <em>ArcGIS Online</em> (hledání v celém cloudu). Cizí datové vrstvy (tj. vypublikované do cloudu jiným uživatelem) není možné editovat, ale v režimu pro čtení je možné je prohlížet, analyzovat, dotazovat se na ně apod. V případě potřeby lokálního stažení kopie vrstvy na ArcGIS Online je možné pomocí funkce <strong>Select</strong> (standardně v panelu Geoprocessing nebo přes <em>Analysis &gt; Tools</em>) provést dotaz na vrstvu, jehož výsledkem jsou lokálně uložená data. Tentýž postup je možné použít pro data distribuovaná přes služby WFS nebo ArcGIS Server Feature Service, kde však může být omezen počet prvků na jeden dotaz. Lze vložit SQL podmínku jako v případě atributového dotazu a omezit data, která nás zajímají, na určitý podvýběr.</p>
+<h2 id="symbolika_dat">Symbolika dat</h2>
+<p>ArcGIS standardně přidělí všem vektorovým datům načteným z lokálního umístění výchozí symbolizaci. Tu je možné měnit pomocí položky <em>Symbology</em> v k. m. třídy prvků. Není takto možné měnit symboliku u vybraných typů vrstev (např. z webového umístění – webové služby).</p>
+<h4 id="symbolika_vektorů"><strong>Symbolika vektorů</strong></h4>
+<p>Implicitně je vždy nastavena hodnota <em>Single symbol</em>, vizualizující všechny prvky vrstvy stejným způsobem. Pomocí přepnutí na <em>Unique values</em> (v případě kvalitativních dat, kategorií apod.) nebo na <em>Graduated colors</em> (v případě kvantitativních dat) je možné symbolizovat data různým způsobem podle příslušnosti k různé hodnotě atributu. V k. m. jednotlivých symbolových tříd pod volbou <em>Unique values</em> nebo <em>Graduated colors</em> je pak možné nastavit nezávislou symbolizaci jednotlivým hodnotám atributu, případně některé hodnoty z vykreslení zcela vyloučit.</p>
+<hr>
+
+<h1 id="cvičné_úlohy_pro_zpracování_na_cvičení">CVIČNÉ ÚLOHY PRO ZPRACOVÁNÍ NA CVIČENÍ</h1>
+<h2 id="vektorová_data_atributové_dotazy">Vektorová data, atributové dotazy</h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{{GISUloha|1|Kolik je v ČR rybníků|VodniPlochy|399}}
+</code></pre></div>
+Návod pro ArcGIS: Table options → Select By Attributes <code>{{bullet}}</code> <code>TYP = 2</code> <code>{{bullet}}</code> Apply</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>{{GISUloha|2|Jaká je celková délka (v km) přirozených vodních toků v ČR|VodniToky|30 412 km}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>{{GISUloha|3|Jaká je průměrná nadmořská výška (v m) vodních nádrží v ČR|VodniPlochy|419 m}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>{{GISUloha|4|Kolik silnic v ČR má více než dva jizdní pruhy|Silnice_2015|1002}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{{GISUloha|5|Jaká je délka (v km) dálnic v ČR, které mají šest jízdních pruhů|Silnice_2015|36,45 km}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{{GISUloha|6|Kolik železničních stanic v ČR obsahuje ve svém názvu předložku &#39;nad&#39;|ZeleznicniStanice|112}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{{GISUloha|7|Jaká je celková plocha (v {{sq|km}}) sídel v ČR u kterých jejich název začíná na písmeno &#39;K&#39;|SidlaPlochy|86,41 {{sq|km}}}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>{{GISUloha|8|Ve které obci Ústeckého kraje je největší nezaměstnanost a kolik to je|ObceBody (AC)|Trmice; 17,56%}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>{{GISUloha|9|Najděte obec v ČR, kde je nejvyšší poměr mezi muži a ženami a kolik to je|ObceBody (AC)|Staňkovice; 2,54:1}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>{{GISUloha|10|V kolika obcích v ČR převyšuje počet sňatků počet rozvodů. V jaké obci je počet sňatků nejvyšší vzhledem k aktuálnímu počtu obyvatel|ObceBody (AC)|3808; Podhradí nad Dyjí}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>{{GISUloha|11|Jaká je průměrná hodnota nezaměstnanosti v ORP Beroun|ObceBody (AC)|5,30%}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>{{GISUloha|12|Kolik katastrálních území spadá do oblasti s kódem LAU1 &#39;CZ0327&#39; a jakou mají celkovou výměru (v {{sq|km}})|KatastralniUzemiPolygony (AC)|215; 1 378{{sq|km}}}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>{{GISUloha|13|V kolika případech se shoduje název obce s názvem katastrálního území|KatastralniUzemiPolygony (AC)|4516}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>{{GISUloha|14|Kolik katastrálních území začíná na písmeno &#39;R&#39; a má přesně tři znaky ve svém názvu|KatastralniUzemiPolygony (AC)|3}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>{{GISUloha|15|Ve kterých krajích je míra nezaměstranosti mužů větší než u žen|KrajePolygony (AC)|Karlovarský, Olomoucký, Moravskoslezský}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>{{GISUloha|16|Jaká je celková délka silnic 1., 2. a 3. třídy|Silnice_2015|1 - 5 794 km; 2 - 14 138 km; 3 - 21 369 km}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{{GISUloha|17|Jaký název pro obec je nejfrekventovanější, kolik obcí s tímto názvem v ČR je|ObceBody (AC)|14; Nová ves}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>{{GISUloha|18|Pro každý typ vodní plochy najděte nejvyšší nadmořskou výšku|VodniPlochy|Vodní nádrž 773 m; Rybník 731 m; Jezero 1 008 m}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>{{GISUloha|19|Jaký je poměr mezinárodních ku vnitrostátním letištím v ČR|Letiste|18:76}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>{{GISUloha|20|Který okres v ČR se skládá z největšího počtu obcí a kolik to je|ObceBody (AC)|Brno-venkov, 187}}
+</code></pre></div></p>
+<h2 id="prostorové_dotazy">Prostorové dotazy</h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>{{GISUloha|31|Existuje v ČR letiště, které leží v lese? Jak se jmenuje|Letiste, Lesy|Točná}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>{{GISUloha|32|Kolika obcemi v ČR neprochází žádná silnice|ObcePolygony (AC), Silnice_2015|241}}
+</code></pre></div>
+<em>Poznámka:</em> singleparts vs multiparts</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>{{GISUloha|33|Kolik obcí leží na hranici ČR|ObcePolygony (AC), StatPolygon (AC)|285}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>{{GISUloha|34|Vyberte silnice, které kříží vodní toky. Kolik procent z těchto silnic tvoří silnice první třídy|Silnice_2015, VodniToky|14,5%}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>{{GISUloha|35|Kolik procent rybníků z celkového počtu leží celou svojí plochou na území Jihočeského kraje|VodniPlochy, KrajePolygony (AC)|41,85%}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>{{GISUloha|36|Na kolika mapových listech Základní mapy 1&lt;nowiki&gt;:&lt;/nowiki&gt;25 000 leží alespoň částečně okres Litoměřice. Kolik mapových listů potom leží v tomto okresu celou svojí plochou|KladZakladnichMap, OkresyPolygon (AC)|19, 4}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>{{GISUloha|37|Kolik železničních stanic leží v lese a zároveň jejich název nezačíná na písmeno &#39;L&#39;|Lesy, ZeleznicniStanice|100}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>{{GISUloha|38|Které silnice (uveďte jejich číslo) druhé třídy procházejí oblastí bažin a rašelinišť|Silnice_2015, BazinyARaseliniste|103, 169}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>{{GISUloha|39|Jaká je průměrná nadmořská výška výškových kót na území Středočeského kraje|VyskoveKoty, KrajePolygony (AC)|488}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>{{GISUloha|40|Kolik vodních ploch leží alespoň částí své plochy ve vzdálenosti do 10 km od poledníku se zeměpisnou délkou 15&amp;deg;|VodniPlochy, ZemepisnaSitWGS84|45}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>{{GISUloha|41|Kolik obcí se dotýká alespoň jedním liniovým segmentem hranice kraje|KrajePolygony (AC), ObcePolygony (AC)|1248}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>{{GISUloha|42|Vyberte katastrální území, ve kterých leží alespoň částečně jedna vodní plocha, seskupte tyto území podle kódu NUTS (LAU1). Uveďte jaký kód NUTS má největší výměru a z kolika katastrálních území se skládá|KatastralniUzemiPolygony (AC), VodniPlochy (AC)|CZ0313, 78}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>{{GISUloha|43|Uveďte souřadnice reprezentačního bodu (centroidu) největší vodní nádrže v Libereckém kraji. O jakou vodní nádrž se jedná|VodniPlochy, KrajePolygony (AC)|-678660, -971660; Josefův důl}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>{{GISUloha|44|Kolik obcí leží celou svojí plochou na mapovém listu &quot;Pardubice&quot; ZM 1&lt;nowiki&gt;:&lt;/nowiki&gt;25 000. Do kolika ORP tyto obce patří a které to jsou|ObcePolygony (AC), KladyZakladnichMap|8; 2; Chrudim, Pardubice}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>{{GISUloha|45|Kolik obcí v ČR leží svoji plochou alespoň na dvou mapových listech Základní mapy 1&lt;nowiki&gt;:&lt;/nowiki&gt;50 000|ObcePolygony (AC), KladyZakladnichMap|2357}}
+</code></pre></div></p>
+<p>––––––––––––––––––––––––––––––––––––</p>
+<h2 id="prostorové_funkce">Prostorové funkce</h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>{{GISUloha|51|Jaká je výměra (v ha) bažin a rašelinišť ležících v lese. Kolik to je procent z celkové výměry bažin a rašelinišť|BazinyARaseliniste, Lesy|5743; 64%}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>{{GISUloha|52|Jaká je výměra (v {{sq|km}}) území omezeného pouze na ČR do 100 m od dálnic|Silnice_2015, StatPolygon (AC)|155,38}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>{{GISUloha|53|Kolik obcí v ČR leží celou svou plochou do vzdálenosti 10 km od řeky Labe? Jaký je celkový počet obyvatel těchto obcí|VodniToky, StatPolygon (AC), ObcePolygony (AC)|520; 868 320}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>{{GISUloha|54|Na kolika místech se kříží dálnice, rychlostní silnice či silnice 1. třídy s železnicí. Kolik z těchto křížení leží do vzdálenosti 1km od nejbližší železniční stanice|Silnice_2015, Zeleznice, ZeleznicniStanice|1165; 442 (x)}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>{{GISUloha|55|Jaká je výměra území (v ha), na kterých leží les či vodní plocha. Existuje území, které by odpovídalo současně oběma podmínkám|Lesy, VodniPlochy|2 832 583; ne}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>{{GISUloha|56|Vytvořte společnou datovou vrstvu pro letiště a železniční stanice. Kolik objektů tato vrstva obsahuje|Letiste, ZeleznicniStanice|1177}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>{{GISUloha|57|Kolik procent z celkové výměry ČR činí uzemí, která jsou vzdálená od nejbližšího rybníku více než 25 km|Vodni Plochy, StatPolygon|6,9%}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>{{GISUloha|58|Jaká je výměra uzemí ČR (v {{sq|km}}), která leží dále než 5 km od nejbližší silnice a zároveň dále než 10 km od nejbližší železniční stanice? Na území kterých obcí leží největší z hledaných lokalit|Silnice_2015, ZeleznicniStanice, StatPolygon (AC)|18,6 {{sq|km}}; Modrava}}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>{{GISUloha|59|Kolik procent území Jihočeského kraje tvoří vodní plochy|VodniPlochy, ObcePolygony (AC)| 1,73%}}
+</code></pre></div></p>
+<h2 id="úlohy_za_bonusové_body">Úlohy za bonusové body</h2>
+<p>(data pro úlohy jsou k dispozici <a href="https://vltava.fsv.cvut.cz/giss_data/">ZDE</a>)</p>
+<ul>
+<li><del><strong>Úloha 2401</strong> (0,25 bodu)</del></li>
+</ul>
+<p><del>Ve které obci je nejvíce úseků el. vedení (vrstva <em>PowerL</em> z datasetu <em>DATA250.zip</em>) dlouhých alespoň 4 km, které do ní spadají celou svou délkou? Kolik takových úseků nad 4 km celkem je a jaká je jejich průměrná délka? (užijte také <em>ObcePolygony</em> z ArcČR 3.3)</del></p>
+<ul>
+<li><strong>Úloha 2402</strong> (0,25 bodu)</li>
+</ul>
+<p>Kolik z těch maloplošných chráněných území (vrstva <em>MZChU</em> z datasetu <em>MZChU.zip</em>), které zasahují svou plochou alespoň do dvou okresů (<em>OkresyPolygony</em> v ArcČR 3.3), má název (atribut <em>NAZEV</em>) o min. třech slovech? Kolik z takových je národní přír. památkou (atribut <em>KAT</em> roven <em>NPP</em>)?</p>
+<ul>
+<li><strong>Úloha 2403</strong> (0,25 bodu)</li>
+</ul>
+<p>Kolik % plochy okresů větších než je průměrná velikost okresu v ČR zabírá území, pro které platí, že je vodní plochou a není vzdáleno více než 5 km od nejbližší výškové kóty vysoké alespoň 600 m? (vše v ArcČR 3.3 – vrstvy <em>OkresyPolygony, VodniPlochy, VyskoveKoty</em>)</p>
+<ul>
+<li><strong>Úloha 2404</strong> (0,25 bodu)</li>
+</ul>
+<p>Předpokládejme ochranné pásmo kolem železniční trati, které tvoří pruh území 300 m široký na obě strany od železnice. Kolik rašelinišť se do tohoto ochranného pásma dostane alespoň třetinou své velikosti? (vrstva <em>SwampA</em> a <em>RailrdL</em> z datasetu <em>DATA250.zip</em>)?</p>
+<div class="admonition warning">
+<p class="admonition-title">POZOR</p>
+</div>
+<p><strong>Pro uznání bodů je třeba zaslat (přes Teams) výsledek jako zabalený projektový balíček (menu <em>Share</em> &gt; <em>Map </em>a zde dát <em>Save package to file</em>) plus printscreen panelu <em>History</em> (menu <em>Analysis</em> &gt; <em>History</em>), aby bylo trochu patrné, kterými funkcemi jste se výsledku dobrali.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zpět na začátek
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://geomatics.fsv.cvut.cz" target="_blank">Katedra geomatiky</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2023-2024
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/CTUGeomatics" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/geomatics.ctu" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/geomatics.ctu" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Zkop\u00edrov\u00e1no do schr\u00e1nky", "clipboard.copy": "Kop\u00edrovat do schr\u00e1nky", "search.result.more.one": "1 dal\u0161\u00ed na t\u00e9to str\u00e1nce", "search.result.more.other": "# v\u00edce na t\u00e9to str\u00e1nce", "search.result.none": "Nenalezeny \u017e\u00e1dn\u00e9 dokumenty", "search.result.one": "Nalezen\u00fd dokument: 1", "search.result.other": "Nalezen\u00e9 dokumenty: #", "search.result.placeholder": "Pi\u0161te co se m\u00e1 vyhledat", "search.result.term.missing": "Chyb\u011bj\u00edc\u00ed", "select.version": "Vyberte verzi"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
