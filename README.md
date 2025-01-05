@@ -1,6 +1,6 @@
 # 155GISS
 
-[Project Homepage](https://k155cvut.github.io/gisss/)
+[Project Homepage](https://k155cvut.github.io/giss/)
 
 [MkDocs Material dokumentace](https://squidfunk.github.io/mkdocs-material/)
 
