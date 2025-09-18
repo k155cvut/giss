@@ -35,6 +35,7 @@ V ArcGIS pro řešeno tzv. on-the-fly transformací (aplikace slícuje data v r�
 | UTM zóna 33N | metrický | 32633 | 500 000; 5 500 000 |
 | Web Mercator (Google Mercator) | metrický | 3857 | 1 600 000; 6 400 000 |
 | WGS-84 | stupňový | 4326 | 14,5°; 50,0° |
+| ETRS89 | metrický | 3045 | 500 000; 5 500 000 |
 
 SRS je možné nastavit ve vlastnostech mapy (*Properties \> Reference system*), lze zadat číslo EPSG kódu a příslušný SRS se doplní. SRS jednotlivých vrstev je jejich vlastností (u Shapefile je evidován v souboru PRJ) a lze jej změnit (přetransformovat třídu prvků do jiného SRS) pomocí funkce *Project*. Nemá-li třída prvků definován SRS, ArcGIS ji sice dovede zobrazit (v aktuálně nastaveném SRS mapy bez ohledu na správnost), ale nedokáže transformovat do jiných SRS. Nastavit chybějící informaci o SRS třídě prvků lze funkcí *Define projection*.
 
@@ -104,9 +105,8 @@ Tyto prostorové vztahy lze vyšetřovat přímo (přesně) anebo se vzdálenost
 
 Tyto dotazy nikdy nemění geometrie vstupních vrstev, pouze provádějí výběr. Změnu geometrických vlastností vrstev na základě polohových vztahů umožňují až **prostorové funkce**.
 
-#### Trvalé uložení query nad vrstvou (*Definition query*) {#trvalé_uložení_query_nad_vrstvou_definition_query}
-
-Nad vrstvou je možné nastavit jakýsi trvale volaný filtr/dotaz, který lze nastavit v k. m. vrstvy pod sekcí *Definition query*. Zde je možné vložit úplně stejným způsobem jako u atributového dotazu klauzuli nebo SQL dotaz, který se po uložení trvale aplikuje a datová vrstva se poté chová, jako by data nesplňující nadefinovanou podmínku vůbec neobsahovala. Definition query lze kdykoli vypnout dočasně (odškrtnutím příslušného řádku) nebo trvale. Je možné nadefinovat si více těchto Definition query a dle potřeby mezi nimi přepínat.
+!!! tip "Trvalé uložení filtru nad vrstvou (*Definition query*)"
+    Nad vrstvou je možné nastavit jakýsi trvale volaný filtr/dotaz, který lze nastavit v k. m. vrstvy pod sekcí ***Definition query***. Zde je možné vložit úplně stejným způsobem jako u atributového dotazu klauzuli nebo SQL dotaz, který se po uložení trvale aplikuje a datová vrstva se poté chová, jako by data nesplňující nadefinovanou podmínku vůbec neobsahovala. Definition query lze kdykoli vypnout dočasně (odškrtnutím příslušného řádku) nebo trvale. Je možné nadefinovat si více těchto *Definition query* a dle potřeby mezi nimi přepínat.
 
 ## Prostorové (překryvné) funkce {#prostorové_překryvné_funkce}
 
@@ -128,15 +128,17 @@ Poněkud stranou stojí dvojice funkcí *Dissolve* a *Multipart to singlepart*, 
 
 ***Dissolve*** umožňuje proředění vrstvy na základě shody tematického atributu. Tedy lze např. na základě shodného atributu příslušnosti ke kraji proředit vrstvu okresů a převést ji (sloučením) na kraje. Lze k výsledným prvkům přiřadit statistické sumární informace – sekce *Statistic fields*. Zde je možnost nechat si k nově sloučeným prvkům spočítat charakteristiky dle následující tabulky:
 
-| Charakteristika v ArcGIS | Význam | Charakteristika v ArcGIS | Význam | Charakteristika v ArcGIS | Význam |
+
+| Charakteristika v&nbsp;ArcGIS | Význam | Charakteristika v&nbsp;ArcGIS | Význam | Charakteristika v&nbsp;ArcGIS | Význam |
 |---|---|---|---|---|---|
 | Count | Počet prvků | Standard deviation | Směrodatná odchylka z hodnot | First | Hodnota prvního prvku |
-| Mean | Průměr hodnot | Range | Rozsah hodnot (max – min) | Last | Hodnota posledního prvku |
+| Mean | Průměr hodnot | Range | Rozsah hodnot <br>(max – min) | Last | Hodnota posledního prvku |
 | Sum | Součet hodnot | Median | Medián hodnot | Unique | Počet unikátních hodnot mezi prvky |
 | Minimum | Minimální hodnota | Variance | Rozptyl hodnot | Concatenate | Jednotlivé hodnoty oddělené oddělovačem |
 | Maximum | Maximální hodnota |  |  |  |  |
 
 !!! warning "ostatní atributy, nenastavené v rámci *Statistic fields*, se do výsledné vrstvy nepřenesou"
+
 
 Naproti tomu ***Multipart to singlepart*** umožňuje rozdělit geometrie objektů na jednotlivé původně prostorově nesouvislé díly a odstranit tak z dat takové prvky, které sestávají z více vzájemně nespojitých částí (*parts*). Příkladem může být vrstva obcí, kdy některé obce mají exklávy (geometricky nespojité části), které součástí obce jsou, ale netvoří s vlastním hlavním správním územím obce jeden prostorový celek.
 
